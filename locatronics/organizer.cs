@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace Locatronics
 {
-    // organizer > racks > cells > basket > chamber
+    // organizer > racks > cells > baskets > chambers
     public class organizer
     {
-        public racks r1 = new racks();
-        //public racks r2 = new racks();
-        //public racks r3 = new racks();
-        //public racks r4 = new racks();
-
         // @todo Make an array of racks
-        //public List<racks> racks = new List<Locatronics.racks>();
+        public List<rack> racks = new List<rack>();
 
         public organizer()
         {
@@ -27,6 +22,9 @@ namespace Locatronics
 
         public void setupR1()
         {
+            rack r1 = new rack();
+            racks.Add(r1);
+
             // ??
             r1.cell(111, "Black Red Soft Plastic Coated Testing Probe Aligator Clips Crocodile P2001");
             r1.cell(112, "5.08mm 2 Pin Connect Terminal Screw Terminal Connector KF301-2P");
@@ -103,7 +101,7 @@ namespace Locatronics
             r1.cell(214, "Multi Tester AC DC Voltmeter Ohmmeter Electrical Digital Multimeter DT-830B");
             r1.cell(215, "DIP IC Socket PCB Mount Connector");
             r1.cell(216, "100m Red Magnet Wire 0.2mm Enameled Copper Wire Round Magnetic Coil Winding");
-            
+
             // Power Tools
             r1.cell(221, "4 Channel Relay Module With Optocoupler");
             r1.cell(223, "5V 1/2/4/6/8 Channel Relay Board Module Optocoupler LED for Arduino PiC ARM AVR");
@@ -120,12 +118,12 @@ namespace Locatronics
             r1.cell(234, "Network Cable Plug Connectors RJ45 Modular Female Couplers Module");
             r1.cell(235, "2000DPI Mice Optical Mouse Cordless USB Receiver PC Laptop Wireless Mice - Red");
             r1.cell(236, "2000DPI Mice Optical Mouse Cordless USB Receiver PC Laptop Wireless Mice - Yellow");
-            
+
             // Tools
             // cutter, cramper
         }
 
-        public List<baskets> search(string component)
+        public List<basket> search(string component)
         {
             component = component.ToUpper();
 
@@ -134,12 +132,15 @@ namespace Locatronics
             // install
 
             // for each racks
-            List<baskets> search = new List<baskets>();
-            foreach (baskets b in r1.baskets)
+            List<basket> search = new List<basket>();
+            foreach (rack rack in racks)
             {
-                if(b.contents.Contains(component))
+                foreach (basket b in rack.baskets)
                 {
-                    search.Add(b);
+                    if (b.contents.Contains(component))
+                    {
+                        search.Add(b);
+                    }
                 }
             }
 
@@ -152,13 +153,17 @@ namespace Locatronics
 
             List<string> names = new List<string>();
             // for each items, if partial names matches, return strings
-            foreach (baskets b in r1.baskets)
+            foreach (rack rack in racks)
             {
-                if (b.contents.Contains(component))
+                foreach (basket b in rack.baskets)
                 {
-                    names.Add(b.contents);
+                    if (b.contents.Contains(component))
+                    {
+                        names.Add(b.contents);
+                    }
                 }
             }
+
 
             return names;
         }

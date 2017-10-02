@@ -53,6 +53,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textBox2.Location = new System.Drawing.Point(12, 50);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -60,7 +61,7 @@
             this.textBox2.Size = new System.Drawing.Size(259, 127);
             this.textBox2.TabIndex = 2;
             // 
-            // Form1
+            // locator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,7 +72,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "locator";
             this.Text = "Search Components";
             this.ResumeLayout(false);
             this.PerformLayout();

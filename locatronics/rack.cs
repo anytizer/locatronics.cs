@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Locatronics
 {
-    public class racks
+    public class rack
     {
-        public List<baskets> baskets = new List<Locatronics.baskets>();
+        public List<basket> baskets = new List<Locatronics.basket>();
 
         public void cell(int address, string component)
         {
-            locations location = new locations();
+            location location = new location();
             location.address = address;
 
-            baskets b = new baskets();
+            basket b = new basket();
             b.location = location;
             b.contents = component.ToUpper();
 

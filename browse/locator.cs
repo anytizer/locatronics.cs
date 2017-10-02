@@ -34,7 +34,7 @@ namespace browse
             organizer o = new organizer();
 
             string component = textBox1.Text;
-            List<baskets> search = o.search(component);
+            List<basket> search = o.search(component);
 
             string addresses = "";
 

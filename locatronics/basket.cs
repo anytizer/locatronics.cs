@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Locatronics
 {
-    public class baskets
+    public class basket
     {
-        public locations location;
+        // @todo Include rack number also
+        // locations are linked with racks
+        public location location;
         public string contents;
     }
 }

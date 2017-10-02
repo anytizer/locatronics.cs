@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Locatronics
 {
-    public class locations
+    public class location
     {
         /**
          * Also make them ready to glow their own LEDs on the rack

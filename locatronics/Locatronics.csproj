@@ -41,11 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="baskets.cs" />
+    <Compile Include="basket.cs" />
     <Compile Include="organizer.cs" />
-    <Compile Include="locations.cs" />
+    <Compile Include="location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="racks.cs" />
+    <Compile Include="rack.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
