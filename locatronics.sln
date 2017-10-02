@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "locatronics", "locatronics\locatronics.csproj", "{78F310D3-7E2B-4A49-A583-27B29A40F1E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{08DA3999-A069-4795-8F75-EA6F80C1E234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "browse", "browse\browse.csproj", "{DE7C707C-6911-4D4D-B3A6-588C22DB4A1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78F310D3-7E2B-4A49-A583-27B29A40F1E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F310D3-7E2B-4A49-A583-27B29A40F1E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F310D3-7E2B-4A49-A583-27B29A40F1E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F310D3-7E2B-4A49-A583-27B29A40F1E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08DA3999-A069-4795-8F75-EA6F80C1E234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08DA3999-A069-4795-8F75-EA6F80C1E234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08DA3999-A069-4795-8F75-EA6F80C1E234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08DA3999-A069-4795-8F75-EA6F80C1E234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7C707C-6911-4D4D-B3A6-588C22DB4A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7C707C-6911-4D4D-B3A6-588C22DB4A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7C707C-6911-4D4D-B3A6-588C22DB4A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7C707C-6911-4D4D-B3A6-588C22DB4A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
