@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace tests
 {
     [TestClass]
-    public class UnitTest1
+    public class SearchTests
     {
         [TestMethod]
         public void search_1N4007()
@@ -16,7 +16,7 @@ namespace tests
             // glow address rack
             organizer o = new organizer();
 
-            int requiredAddress = 29;
+            int requiredAddress = 129;
             string component = "1n4007";
             List<baskets> search = o.search(component);
             Assert.AreEqual(search.Count, 1);
@@ -32,7 +32,7 @@ namespace tests
             // glow address rack
             organizer o = new organizer();
 
-            int requiredAddress = 41;
+            int requiredAddress = 141;
             string component = "capacitor";
             List<baskets> search = o.search(component);
             Assert.AreEqual(search.Count, 3);
@@ -46,22 +46,12 @@ namespace tests
         {
             organizer o = new organizer();
 
-            int requiredAddress = 75;
+            int requiredAddress = 175;
             string component = "gpio";
             List<baskets> search = o.search(component);
 
             Assert.AreEqual(search.Count, 1);
             Assert.AreEqual(search[0].location.address, requiredAddress);
-        }
-
-        [TestMethod]
-        public void preview_Capacitors()
-        {
-            organizer o = new organizer();
-
-            string component = "capacitor";
-            List<string> names = o.preview(component);
-            Assert.AreEqual(names.Count, 3);
         }
     }
 }
