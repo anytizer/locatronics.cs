@@ -20,6 +20,9 @@ namespace Locatronics
         public organizer()
         {
             setupR1();
+            //setupR2();
+            //setupR3();
+            //setupR4();
         }
 
         public void setupR1()
@@ -39,23 +42,23 @@ namespace Locatronics
             r1.cell(124, "RGB Common Cathode LED");
             r1.cell(125, "RGB Common Anode LED");
             r1.cell(126, "3mm LED Light White Yellow Red Blue Green Assortment Diodes");
-            r1.cell(127, "IR Emitter Tsal6100 6100 Emitter Ir 5Mm Hi Eff 940Nm Ic New F");
-            r1.cell(128, "Laser LED");
-            r1.cell(129, "1A 1000V Diode 1N4007 IN4007 DO-41 Rectifie Diodes");
+            r1.cell(127, "IR Emitter TSAL6100 6100 Emitter IR 5Mm Hi Eff 940nm ");
+            r1.cell(128, "Laser Diode LED");
+            r1.cell(129, "1A 1000V Diode 1N4007 IN4007 DO-41 Rectifier Diodes");
 
             // Resistors - Variable Values
-            r1.cell(131, "Resistors Low");
-            r1.cell(132, "Resistors Medium");
-            r1.cell(133, "Resistors High");
+            r1.cell(131, "Resistors - Low");
+            r1.cell(132, "Resistors - Medium");
+            r1.cell(133, "Resistors - High");
 
             // Capacitors - Variable Values
-            r1.cell(141, "Capacitors Low");
-            r1.cell(142, "Capacitors Medium");
-            r1.cell(143, "Capacitors High");
+            r1.cell(141, "Capacitors - Low");
+            r1.cell(142, "Capacitors - Medium");
+            r1.cell(143, "Capacitors - High");
 
-            // Sensors
+            // Sensors and Switches
             r1.cell(151, "LDR 5mm");
-            r1.cell(152, "IR Sensor Hs0038b Hs0038 Sip3 Infrared Receiver To-92 Ir Receiver New Diy Ic I");
+            r1.cell(152, "IR Sensor HS0038B HS0038 Sip3 Infrared Receiver To-92 Ir Receiver New Diy Ic I");
             r1.cell(153, "Reed Switch");
             r1.cell(154, "DIP Switch");
             r1.cell(155, "Push Button Switch");
@@ -87,7 +90,7 @@ namespace Locatronics
             r1.cell(194, "Normal Solder");
             r1.cell(195, "Heat Shrink Tube");
 
-            // ICs
+            // Integrated Circuits
             r1.cell(201, "ATMEGA328P-PU");
             r1.cell(202, "NE555");
             r1.cell(203, "SN74HC595N 74HC595 8-Bit Shift Register DIP-16 IC");
@@ -102,7 +105,7 @@ namespace Locatronics
             r1.cell(216, "100m Red Magnet Wire 0.2mm Enameled Copper Wire Round Magnetic Coil Winding");
             
             // Power Tools
-            r1.cell(221, "4 Channel Relay Module With optocoupler");
+            r1.cell(221, "4 Channel Relay Module With Optocoupler");
             r1.cell(223, "5V 1/2/4/6/8 Channel Relay Board Module Optocoupler LED for Arduino PiC ARM AVR");
             r1.cell(224, "L317 LM317 LM317T TO-220 Voltage Regulator 1.2V To 37V 1.5A");
             r1.cell(225, "5 Way Spring Lever Terminal Block Electric Cable Wire Connector PCT-215");

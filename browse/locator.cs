@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace browse
 {
-    public partial class Form1 : Form
+    public partial class locator : Form
     {
-        public Form1()
+        public locator()
         {
             InitializeComponent();
         }

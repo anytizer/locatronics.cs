@@ -1,6 +1,6 @@
 ﻿namespace browse
 {
-    partial class Form1
+    partial class locator
     {
         /// <summary>
         /// Required designer variable.
