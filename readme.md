@@ -1,4 +1,4 @@
-# locatronics
+# Locatronics
 Find out where your tiny electronics components are located at.
 
 
@@ -9,7 +9,7 @@ Find out where your tiny electronics components are located at.
 
 
 ## General working
-It creates a local searchable database of your organizer bins and their placements within your racks.
+ - Creates a local searchable database of your organizer bins and their placements within your racks.
 
 
 ## Info
