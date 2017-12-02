@@ -1,5 +1,6 @@
 # Locatronics
-Find out where your tiny electronics components are located at.
+ - C#.net application
+ - Find out where your tiny electronics components are located at.
 
 
 ## Inspirations
@@ -10,10 +11,12 @@ Find out where your tiny electronics components are located at.
 
 ## General working
  - Creates a local searchable database of your organizer bins and their placements within your racks.
+ - Can be used for anything where you need to search.
 
 
 ## Info
  - It is a standalone application.
+ - Contains self hosted database (as variables).
  - The software does not need any electronics, wiring and Arduino at the moment.
  - You can still DIY Electronics and wire the LEDs based on the output of the search results.
 
