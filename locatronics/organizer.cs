@@ -9,7 +9,7 @@ namespace Locatronics
     // organizer > racks > cells > baskets > chambers
     public class organizer
     {
-        private int SearchStringMinimumLength = 3;
+        private int SearchStringMinimumLength = 2;
         public List<rack> racks = new List<rack>();
 
         public organizer()
@@ -22,13 +22,14 @@ namespace Locatronics
 
         /**
          * Define baskets in Rack 1
+         * Database or Inventory of Items
          */
         private void setupR1(ref rack rack)
         {
             // ??
             rack.cell(111, "Black Red Soft Plastic Coated Testing Probe Aligator Clips Crocodile P2001");
             rack.cell(112, "5.08mm 2 Pin Connect Terminal Screw Terminal Connector KF301-2P");
-            rack.cell(113, "Pitch jumper shorted cap&Headers & Wire Housings 2.54MM SHUNT");
+            rack.cell(113, "Pitch jumper shorted cap & Headers & Wire Housings 2.54MM SHUNT");
             rack.cell(114, "T type 9V DC Battery Power Cable Barrel Jack Connector");
             rack.cell(115, "Snap on 9V Battery Holder Clip Connector Hard Shell 10CM Cable Lead");
             rack.cell(116, "Plastic ABS Enclosure Protective Case shell Transparent For UNO R3 Arduino");
@@ -48,6 +49,8 @@ namespace Locatronics
             rack.cell(131, "Resistors - Low");
             rack.cell(132, "Resistors - Medium");
             rack.cell(133, "Resistors - High");
+            rack.cell(134, "Dual stereo Potentiometer 3 pin");
+            rack.cell(135, "Potentiometer Palstic Knob");
 
             // Capacitors - Variable Values
             rack.cell(141, "Capacitors - Low");
@@ -75,6 +78,7 @@ namespace Locatronics
             rack.cell(173, "Jumper Cables 120pcs Dupont Wire Male to Male + Male to Female + Female to Female Jumper Cable");
             rack.cell(174, "Breadboard 400 Contacts");
             rack.cell(175, "GPIO Ribbon Cable");
+            rack.cell(176, "Mini Micro JST Set");
 
             // Computer Boards
             rack.cell(181, "Arduino Uno Board");
@@ -97,7 +101,7 @@ namespace Locatronics
 
             // Soldering
             rack.cell(211, "Cable Tester+Crimp Crimper");
-            rack.cell(212, "Tin Lead Rosin Core Solder Soldering Welding Wire FLUX 2.0%");
+            rack.cell(212, "Tin Lead Rosin Core Soldering / Welding Wire FLUX 2.0%");
             rack.cell(213, "Rainbow Ribbon IDC Cable Wire Rainbow Cable");
             rack.cell(214, "Multi Tester AC DC Voltmeter Ohmmeter Electrical Digital Multimeter DT-830B");
             rack.cell(215, "DIP IC Socket PCB Mount Connector");
@@ -124,6 +128,9 @@ namespace Locatronics
             rack.cell(241, "Wire cutter");
             rack.cell(242, "Wire Striper");
             rack.cell(243, "Wire Crimper Network Cable Crimper");
+
+            // Plugs and Sockets
+            rack.cell(251, "Type A male female USB Sockets");
         }
 
         /**
