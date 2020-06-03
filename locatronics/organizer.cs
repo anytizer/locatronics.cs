@@ -15,13 +15,13 @@ namespace Locatronics
         public organizer()
         {
             rack r1 = new rack();
-            setupR1(ref r1);
+            this.setupR1(ref r1);
 
             racks.Add(r1);
         }
 
         /**
-         * Define baskets in Rack 1
+         * Define baskets in Rack #1
          * Database or Inventory of Items
          */
         private void setupR1(ref rack rack)
@@ -71,24 +71,32 @@ namespace Locatronics
             rack.cell(164, "FT232RL FTDI Serials Adapter Module");
             rack.cell(165, "Wireless Adapter Network LAN Card 802.11n/g/b OY");
             rack.cell(166, "USB 3.0 Female Header to 9 Pin USB 2.0 Male Motherboard adapter Cable");
+            rack.cell(167, "Multimeter, Volt-meter, A-meter");
+            rack.cell(168, "Network Cable Tester");
 
             // Wiring
             rack.cell(171, "Solderless MB-102 MB102 Breadboard 830 Tie Point PCB BreadBoard");
             rack.cell(172, "MB102 Breadboard Power Supply Module 3.3V/5V For Arduino Breadboard");
-            rack.cell(173, "Jumper Cables 120pcs Dupont Wire Male to Male + Male to Female + Female to Female Jumper Cable");
-            rack.cell(174, "Breadboard 400 Contacts");
-            rack.cell(175, "GPIO Ribbon Cable");
-            rack.cell(176, "Mini Micro JST Set");
+            rack.cell(173, "Dupont Jumper Cables Male to Male + Male to Female + Female to Female");
+            rack.cell(174, "Dupont Short Jumber Cables");
+            rack.cell(175, "Breadboard 400 Contacts");
+            rack.cell(176, "GPIO Ribbon Cable");
+            rack.cell(177, "Mini Micro JST Set");
+            rack.cell(178, "Rainbow Ribbon Cable 10 way");
+            rack.cell(179, "9V Battery Clips");
+            rack.cell(180, "Aligator Clips");
+
 
             // Computer Boards
             rack.cell(181, "Arduino Uno Board");
-            rack.cell(182, "Arduino Mini Board");
-            rack.cell(182, "Arduino Mega Board");
-            rack.cell(183, "Raspberry Pi Board");
+            rack.cell(182, "Arduino Mini / Nano Board");
+            rack.cell(183, "Arduino Mega Board");
+            rack.cell(184, "Raspberry Pi 3 Board");
+            rack.cell(185, "Raspberry Pi 4 Board");
 
             // Connectors
-            rack.cell(191, "Male Header Pin");
-            rack.cell(192, "Female Header Pin");
+            rack.cell(191, "Breakable Male Header Pins");
+            rack.cell(192, "Breakable Female Header Pins");
             rack.cell(193, "USB Solder");
             rack.cell(194, "Normal Solder");
             rack.cell(195, "Heat Shrink Tube");
@@ -109,6 +117,7 @@ namespace Locatronics
 
             // Power Tools
             rack.cell(221, "4 Channel Relay Module With Optocoupler");
+            rack.cell(222, "8 Channel Relay Module With Optocoupler");
             rack.cell(223, "5V 1/2/4/6/8 Channel Relay Board Module Optocoupler LED for Arduino PiC ARM AVR");
             rack.cell(224, "L317 LM317 LM317T TO-220 Voltage Regulator 1.2V To 37V 1.5A");
             rack.cell(225, "5 Way Spring Lever Terminal Block Electric Cable Wire Connector PCT-215");
@@ -125,16 +134,29 @@ namespace Locatronics
             rack.cell(236, "2000DPI Mice Optical Mouse Cordless USB Receiver PC Laptop Wireless Mice - Yellow");
 
             // Tools
-            rack.cell(241, "Wire cutter");
+            // Also, see devices
+            rack.cell(241, "Wire Cutter");
             rack.cell(242, "Wire Striper");
             rack.cell(243, "Wire Crimper Network Cable Crimper");
+            rack.cell(244, "Network cable de-sheller");
+            rack.cell(245, "Tweezers");
 
             // Plugs and Sockets
             rack.cell(251, "Type A male female USB Sockets");
+
+            // Batteries
+            rack.cell(261, "AA Battery");
+            rack.cell(262, "AAA Battery");
+            rack.cell(263, "9V Battery");
+            rack.cell(264, "2032 Battery");
+
+            // Set of Tool Boxes
+            rack.cell(271, "Plastic Organizer Toolbox 1 - Single Use");
+            rack.cell(272, "Plastic Organizer Toolbox 2 - Backup devices");
         }
 
         /**
-         * @todo Return the baskets
+         * Search
          */
         public List<basket> search(string component)
         {
@@ -184,6 +206,9 @@ namespace Locatronics
                     {
                         if (b.contents.Contains(component))
                         {
+                            /**
+                             * @todo Send LED light on signal to this cell
+                             */
                             names.Add(b.contents);
                         }
                     }

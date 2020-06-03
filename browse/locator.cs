@@ -41,9 +41,9 @@ namespace browse
             foreach (var a in search)
             {
                 string name;
-                if (a.contents.Length >= 20)
+                if (a.contents.Length >= 50)
                 {
-                    name = a.contents.Substring(0, 20);
+                    name = a.contents.Substring(0, 50);
                 }
                 else
                 {
@@ -55,6 +55,16 @@ namespace browse
 
             //MessageBox.Show(addresses);
             textBox2.Text = addresses;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void locator_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
