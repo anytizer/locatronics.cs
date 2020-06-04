@@ -17,7 +17,7 @@ namespace tests
             organizer o = new organizer();
 
             int requiredAddress = 129;
-            string component = "1n4007";
+            string component = "1N4007";
             List<basket> search = o.search(component);
             Assert.AreEqual(search.Count, 1);
 
@@ -42,12 +42,12 @@ namespace tests
         }
 
         [TestMethod]
-        public void search_gpio()
+        public void search_GPIO()
         {
             organizer o = new organizer();
 
             int requiredAddress = 175;
-            string component = "gpio";
+            string component = "GPIO";
             List<basket> search = o.search(component);
 
             Assert.AreEqual(search.Count, 1);
