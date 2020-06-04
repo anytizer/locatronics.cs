@@ -1,5 +1,5 @@
 # Locatronics
- - C#.net application
+ - C#.net based string search application
  - Find out where your tiny electronics components are located at.
 
 
@@ -10,8 +10,7 @@
 
 
 ## General working
- - Creates a local searchable database of your organizer bins and their placements within your racks.
- - Can be used for anything where you need to search.
+ - Creates a locally searchable database of your organizer bins and their placements within your racks.
 
 
 ## Info
